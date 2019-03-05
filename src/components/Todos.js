@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import TodoItem from './TodoItem'
+import TodoItem from './TodoItem';
 import propTypes from 'prop-types'
 
 class Todos extends Component {
@@ -13,7 +13,9 @@ class Todos extends Component {
 
 // Proptypes
 Todos.propTypes = {
-    todos: propTypes.array.isRequired
+    todos: propTypes.array.isRequired,
+    markComplete: propTypes.func.isRequired,
+    delTodo: propTypes.func.isRequired
 }
 
 export default Todos;

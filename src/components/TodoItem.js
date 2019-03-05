@@ -30,7 +30,9 @@ import propTypes from 'prop-types';
 
 // Proptypes
 TodoItem.propTypes = {
-    todo: propTypes.object.isRequired
+    todo: propTypes.object.isRequired, 
+    markComplete: propTypes.func.isRequired,
+    delTodo: propTypes.func.isRequired
 }
 
 const btnStyle = {
